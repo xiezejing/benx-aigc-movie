@@ -22,6 +22,8 @@ description: 为AIGC影视制作提供从创意、美术探索、视觉资产、
 ## 调用路径
 - **从零 / 缺少美术素材** → `workflows/zero-to-film.md`；依次按需读 `prompts/P01-P06-visual-story.md`、`prompts/P07-P10-shots-clip.md`。
 - **有剧本或图片** → `workflows/asset-first.md`；优先资产盘点与缺口检查。
+- **角色定妆照 / 人物、动物或道具外观定型 / 定妆提示词优化** → `prompts/character-look-reference.md`（【用户原创 · benx】原始创作，AI协助提炼与扩展）；按主体类型替换描述，锁定外观后再按需使用 P04/P05。
+- **根据定妆参考图生成五视图 / 三幅身体与两幅头部 / 多视角视觉资产表** → `prompts/character-visual-asset-sheet.md`（【用户原创 · benx】）；按参考图锁定身份与造型，明确左右方向、裁切和未见结构。明确五视图需求时优先此模板，不套用 P04 四宫格。
 - **单项需求** → `references/task-router.md` 找到 P01–P12；只读相应模板。
 - **不会形容 / 术语模糊 / 想让画面更专业** → `references/beginner-coach.md` 和 `references/visual-critique.md`。
 - **已生成效果不理想** → `prompts/P11-P12-continuity-review.md`、`workflows/diagnose.md`。
@@ -39,5 +41,15 @@ description: 为AIGC影视制作提供从创意、美术探索、视觉资产、
 - P07 单镜调度七问；P08 调度整理检查；P09 调度转CLIP；P10 最终CLIP视频提示词：`prompts/P07-P10-shots-clip.md`
 - P11 连续性；P12 质量诊断与定向修复：`prompts/P11-P12-continuity-review.md`
 
+- 通用角色定妆照（人物/动物/道具/非人角色）：`prompts/character-look-reference.md`【用户原创 · benx；AI协助整理与扩展】
+
+- 参考定妆图生成多视角视觉资产（默认三幅身体＋两幅头部）：`prompts/character-visual-asset-sheet.md`【用户原创 · benx；AI协助整理与扩展】
+
 ## 源流标记
 **【教程提炼】**：来源于用户上传的《新手入坑必看！AI视频到底该怎么做？》整理笔记（Ksr桑教程笔记），包括人写调度→提示词、七问、六维、物理化、CLIP框架、参考锚定、24fps剪辑示例。**【本Skill扩展】**：零基础教练、术语跨专业校正、视觉鉴赏框架、诊断优先级、听觉鉴赏、完整交付与跨平台适配。这些扩展不应冒称原教程原话。笔记转录含OCR存疑之处，不将可疑专名当成已核实规范。
+
+
+**【用户原创 · benx】**：用户提供的《主提示词｜电影级写实人物定妆》及其原始创作思路归用户本人。`prompts/character-look-reference.md` 在此基础上由AI协助归纳、优化与跨主体扩展；保留用户原创归属，并区分协助扩展与原文，不将本模块归入教程提炼。
+
+
+**【用户原创 · benx：多视角视觉资产】**：`prompts/character-visual-asset-sheet.md` 的原始提示词及五视图创作方案由用户本人创作；AI协助提炼、参数化及适配。该模块与教程来源分开标注。
